@@ -1,13 +1,13 @@
 <script>
 import appConfig from '@src/app.config'
 import Layout from '@layouts/main'
-
+import DashboardContainer from './Dashboard/DashboardContainer.vue'
 export default {
   page: {
     title: 'Dashboard',
     meta: [{ name: 'description', content: appConfig.description }],
   },
-  components: { Layout },
+  components: { Layout, DashboardContainer },
 }
 </script>
 
@@ -24,17 +24,10 @@ export default {
               <li class="breadcrumb-item active">Dashboard</li>
             </ol>
           </div>
-          <h4 class="page-title">Dashboard</h4>
+          <h4 class="page-title">داشبورد مدیر اعتبارات</h4>
         </div>
       </div>
     </div>
-    <!-- end page title -->
-    <div class="row">
-      <div class="col-md-12">
-        <b-card>
-          This is dashboard page
-        </b-card>
-      </div>
-    </div>
+    <DashboardContainer />
   </Layout>
 </template>
